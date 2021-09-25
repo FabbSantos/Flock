@@ -1,0 +1,21 @@
+{
+	"name": "Vite + TailwindCSS",
+	"build": {
+		"dockerfile": "Dockerfile",
+		"context": "..",
+	},
+
+	// Set *default* container specific settings.json values on container create.
+	"settings": { 
+	},
+
+	// Add the IDs of extensions you want installed when the container is created.
+	"extensions": [
+		"bradlc.vscode-tailwindcss",
+		"eamodio.gitlens",
+		"ms-azuretools.vscode-docker",
+	],
+
+    // Command to be run after the container is created
+	//"postCreateCommand": "pip install -r requirements.txt",
+}
