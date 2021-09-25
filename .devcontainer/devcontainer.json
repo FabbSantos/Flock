@@ -14,6 +14,7 @@
 		"bradlc.vscode-tailwindcss",
 		"eamodio.gitlens",
 		"ms-azuretools.vscode-docker",
+		"csstools.postcssv",
 	],
 
     // Command to be run after the container is created

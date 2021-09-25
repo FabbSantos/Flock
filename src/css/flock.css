@@ -1,10 +1,80 @@
+@import url('https://fonts.googleapis.com/css2?family=Exo+2:wght@400;600;700&display=swap');
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
-@import url('https://fonts.googleapis.com/css2?family=Exo+2:wght@400;600;700&display=swap');
 
 body{
+    @apply min-h-screen font-normal m-0;
     font-family: 'Exo 2', sans-serif;
-    margin: 0;
-    padding: 0;
+}
+
+header{
+    @apply flex justify-center p-5 border-b-4;
+    border-color: #53B51A;
+}
+.banner{
+    @apply bg-gradient-to-br from-purple via-lblue to-dblue py-4;
+}
+
+
+.content{             /* Sets padding to content in body */ 
+    @apply p-3 text-center; 
+}
+
+/* main title configs */
+.title{
+    @apply text-center;
+}
+
+.title h1{
+    @apply text-xl text-white font-semibold;
+}
+
+.title h2{
+    @apply text-xl text-white;
+}
+.text {
+    @apply text-white;
+}
+/* *** */
+
+.video{
+    text-align: -webkit-center;
+    @apply mt-4;
+}
+
+/* stylizing social sharing */
+.social{
+    @apply flex flex-row space-x-3 mt-2 flex-wrap;
+}
+.box_image{
+    @apply p-2 rounded;
+}
+.tw {
+    @apply bg-blue-500;
+}
+.fb {
+    @apply bg-fb;
+}
+.lkd{
+    @apply bg-indigo-600;
+}
+.white{
+    @apply bg-white;
+}
+.link{
+    @apply font-bold -mt-1;
+}
+.copy_link{
+    @apply flex flex-row justify-center align-middle h-8;
+}
+.social_image{
+    @apply w-4 h-4;
+}
+
+/* *** */
+
+
+.exemplo{
+    @apply rounded-tl-xl rounded-br-xl bg-green-200 text-xl text-center w-1/2 h-full m-auto flex items-center justify-center;
 }
