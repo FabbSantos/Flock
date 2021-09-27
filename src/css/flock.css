@@ -20,6 +20,7 @@ body::-webkit-scrollbar-thumb {
     @apply md:bg-greeny md:rounded-2xl;    /* color of the scroll thumb */     /* roundness of the scroll thumb */
 /* border: 3px solid orange;  creates padding around scroll thumb */
 }
+
 @media (min-width: 768px){
     body{
         zoom: 175%;
