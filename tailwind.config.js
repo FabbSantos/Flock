@@ -37,6 +37,20 @@ module.exports = {
           DEFAULT: '#3F135E',
         },
       },
+      fontSize: {
+        'tiny': '0.5rem',
+      },
+      minHeight: {
+        '0': '0',
+        '1/4': '25%',
+        '1/2': '50%',
+        '3/4': '75%',
+        'afters': '296px',
+        'full': '100%',
+       },
+       width: {
+        '10%': '10%',
+      },
     },
   },
   variants: {

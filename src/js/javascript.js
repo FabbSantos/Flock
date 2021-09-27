@@ -4,21 +4,20 @@ $( function(){
 
     function getRandom(){return Math.ceil(Math.random()* 20);}
     function createSum(){
-            var randomNum1 = getRandom(),
-                randomNum2 = getRandom();
-        total =randomNum1 + randomNum2;
-    $( "#question" ).text( randomNum1 + " + " + randomNum2 + "=" );  
-    $("#ans").val('');
-    checkInput();
+        var randomNum1 = getRandom(),
+            randomNum2 = getRandom();
+        total = randomNum1 + randomNum2;
+        $( "#question" ).text( randomNum1 + " + " + randomNum2 + " = " );  
+        $("#ans").val('');
+        checkInput();
     }
 
     function checkInput(){
-            var input = $("#ans").val(), 
-            slideSpeed = 200,
-        hasInput = !!input, 
+        var input = $("#ans").val(), 
+            hasInput = !!input, 
         valid = hasInput && input == total;
         $('#message').toggle(!hasInput);
-        $('button[type=submit]').prop('disabled', !valid);  
+        $('input[type=submit]').prop('disabled', !valid);  
         $('#success').toggle(valid);
         $('#fail').toggle(hasInput && !valid);
     }
