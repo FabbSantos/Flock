@@ -1,4 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Exo+2:wght@400;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
@@ -34,18 +35,21 @@ header{
     @apply text-xl text-white;
 }
 .text {
-    @apply text-white;
+    @apply text-white mt-3;
 }
 /* *** */
 
-.video{
+.left_content{
     text-align: -webkit-center;
     @apply mt-4;
 }
 
 /* stylizing social sharing */
 .social{
-    @apply flex flex-row space-x-3 mt-2 flex-wrap;
+    @apply flex flex-row space-x-4 mt-2 flex-wrap;
+}
+.social2{
+    @apply justify-center mb-3 mt-2;
 }
 .box_image{
     @apply p-2 rounded;
@@ -74,7 +78,143 @@ header{
 
 /* *** */
 
-
-.exemplo{
-    @apply rounded-tl-xl rounded-br-xl bg-green-200 text-xl text-center w-1/2 h-full m-auto flex items-center justify-center;
+.section{
+    @apply p-3;
 }
+.right_content{
+    @apply flex justify-center mt-2;
+}
+
+
+/* Form  */
+
+.form{
+    @apply  bg-white text-left p-4 rounded mt-2; 
+}
+.form h3{
+    @apply text-xl mb-2 ;
+}
+.form #lgpd, #privacy{
+    @apply text-xs;
+}
+#privacy{
+    @apply text-center;
+}
+#privacy a{
+    @apply text-blue-700 underline;
+}
+.check{
+    @apply flex justify-center align-middle space-x-1;
+}
+input {
+    @apply border w-full rounded mb-2;
+    border-color: #E6E6E6;
+}
+input#lgpd {
+    @apply w-min;
+}
+.button{
+    @apply bg-greeny p-2 text-white text-xs;
+}
+label{
+    font-family: 'Exo 2', sans-serif;
+    @apply text-left text-sm;
+}
+
+/* *** */
+
+/* Palestrante */
+
+.palestrante{
+    @apply text-center mt-3;
+    text-align: -webkit-center;
+}
+h2.subtitle{
+    @apply text-xl font-bold pb-1 mb-1 border-b-2 border-greeny w-max text-center;
+}
+.palestrante img{
+    @apply w-6/12;
+}
+
+/*  */
+
+/* Depois do Webinar */
+
+.webinar {
+    @apply bg-webinar;
+}
+.t_web{
+    @apply mt-8 text-center;
+}
+.sec_title{
+    @apply text-center;
+    text-align: -webkit-center;
+}
+
+.circle{
+    @apply p-6 bg-white rounded-full h-24 w-24 flex items-center justify-center;
+}
+.pot h2, .pot p, .work h2, .work p, .agile h2, .agile p{
+    @apply text-center text-white;
+}
+.after_title{
+    @apply font-semibold mt-2 mb-2 text-lg text-white;
+}
+.after_p{
+    @apply text-sm;
+}
+.pot {
+    @apply bg-greeny text-center p-4 mt-5;
+    text-align: -webkit-center;
+}
+.work {
+    @apply bg-workflow text-center p-4 mt-2;
+    text-align: -webkit-center;
+}
+.agile {
+    @apply bg-agile text-center p-4 mt-2 mb-8;
+    text-align: -webkit-center;
+}
+/* *** */
+
+/* Depoimentos */
+.slide_content{
+    @apply flex flex-col-reverse text-center;
+    text-align: -webkit-center;
+}
+.u_case{
+    @apply uppercase text-sm mt-3   ;
+}
+.autor{
+    @apply text-center text-sm font-bold mt-3;
+}
+.autor_company {
+    font-family: 'Roboto', sans-serif;
+    @apply text-xs text-center;
+}
+.slide-container {
+    @apply w-11/12 mx-auto;
+}
+.glider-prev,.glider-next {
+    @apply top-auto -mt-44;
+}
+.glider-prev {
+    @apply left-0;
+}
+.glider-next {
+    @apply right-0;
+}
+/* *** */
+
+/* footer */
+.footer{
+    @apply bg-greeny border-t-4 border-purp flex justify-center;
+}
+.f_cont{
+    @apply p-12;
+}
+.f_cont p{
+    @apply text-white text-xs mb-4 mt-4;
+}
+
+/* *** */

@@ -21,6 +21,21 @@ module.exports = {
         fb:{
           DEFAULT: '#3B5998',
         },
+        greeny:{
+          DEFAULT: '#53B51A',
+        },
+        webinar:{
+          DEFAULT: '#D1D2D3',
+        },
+        workflow:{
+          DEFAULT: '#0052D0',
+        },
+        agile:{
+          DEFAULT: '#3F135E',
+        },
+        purp:{
+          DEFAULT: '#3F135E',
+        },
       },
     },
   },

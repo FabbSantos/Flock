@@ -4,8 +4,22 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Flock</title>
+
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="js/javascript.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/glider-js@1/glider.min.js"></script>
+
+
+    <!-- <script src="glider.js"></script> -->
+    <!-- <script src="https://cdn.jsdelivr.net/npm/@glidejs/glide"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/glider-js/1.7.5/glider.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/glider-js/1.7.5/glider.min.css" media="all"> -->
+
+    
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/glider-js@1/glider.min.css">
     <link rel="stylesheet" href="css/flock.css">
+
+    <title>Flock</title>
 </head>
 <body>
     
@@ -13,53 +27,213 @@
         <img src="images/logo_flock.svg" alt="Flock">
     </header>    
         
-        <div class="banner">
-            
-            <div class="content">    
-                <div class="title">
-                    <h1>Aprenda com Marina Mesquita técnicas de negociação.</h1>
-                    <h2>Agora você pode.</h2>
-                </div>
+    <div class="banner">
         
-                <div class="video">
-                    <video width="100%" height="auto" controls autoplay muted poster="images/thumbnail.svg">
-                        <source src="" type="video/mp4"> 
-                    </video>
+        <div class="content">    
+            <div class="title">
+                <h1>Aprenda com Marina Mesquita técnicas de negociação.</h1>
+                <h2>Agora você pode.</h2>
+            </div>
+    
+            <div class="left_content">
+                <video width="100%" height="auto" controls autoplay muted poster="images/thumbnail.svg">
+                    <source src="" type="video/mp4"> 
+                </video>
 
-                    <div class="social">
-                        <p class="text">Compartilhe esse vídeo </p>
-                        <div class= "box_image lkd">
-                            <a href="#" target="_blank"> <img class="social_image" src="images/linkedin.png"> </a>
-                        </div>
-                        <div class= "box_image fb">
-                            <a href="#" target="_blank"> <img class="social_image" src="images/facebook.png"> </a>
-                        </div>
-                        <div class= "box_image tw">
-                            <a href="#" target="_blank"> <img class="social_image" src="images/twitter.png"> </a> 
-                        </div>
-                        <div class= "box_image white">
-                            <a href="#" target="_blank"> <img class="social_image" src="images/messenger.png"> </a>
-                        </div>
-                        <div class= "box_image white">
-                            <a href="#" target="_blank"> <img class="social_image" src="images/whatsapp.png"> </a>
-                        </div>
-                        <div class= "box_image white copy_link">
-                            <a class="copy_link" href="#" target="_blank"> 
-                                <img class="social_image" src="images/link.png">
-                                <p class="link">Copy Link</p>    
-                            </a>
-                            
-                        </div>
+                <p class="text">Compartilhe esse vídeo </p>
+                <div class="social">
+                    <div class= "box_image lkd">
+                        <a href="#" target="_blank"> <img class="social_image" src="images/linkedin.png" alt="Linkedin"> </a>
                     </div>
+                    <div class= "box_image fb">
+                        <a href="#" target="_blank"> <img class="social_image" src="images/facebook.png" alt="facebook"> </a>
+                    </div>
+                    <div class= "box_image tw">
+                        <a href="#" target="_blank"> <img class="social_image" src="images/twitter.png" alt="twitter"> </a> 
+                    </div>
+                    <div class= "box_image white">
+                        <a href="#" target="_blank"> <img class="social_image" src="images/messenger.png" alt="messenger"> </a>
+                    </div>
+                    <div class= "box_image white">
+                        <a href="#" target="_blank"> <img class="social_image" src="images/whatsapp.png" alt="Whatsapp"> </a>
+                    </div>
+                    <div class= "box_image white copy_link">
+                        <a class="copy_link" href="#" target="_blank"> 
+                            <img class="social_image" src="images/link.png" alt="Link">
+                            <p class="link">Copy Link</p>    
+                        </a>
                         
+                    </div>
+                </div>     
+            </div>
+
+            <div class="right_content">
+                <div class="form">
+                    <h3>É só preencher para participar.</h3>
+                    <form>
+                        <label for="name">Nome Completo:</label><br>
+                        <input type="text" id="name" name="name"><br>
+
+                        <label for="email">E-mail:</label><br>
+                        <input type="email" id="email" name="email"><br>
+
+                        <label for="tel">Telefone (Whatsapp, se possível)</label><br>
+                        <input type="tel" id="tel" name="tel"><br>
+
+                        <p id="question"></p><input id="ans" type="text"><br>
+
+                        <input class="button" type="submit" value="Quero Participar"><br>
+                        
+                        
+                        <div class="check">
+                            <input type="checkbox" id="lgpd" name="lgpd" value="lgpd"> <p id="lgpd">Eu gostaria de receber insights ocasionais da Flock.</p> 
+                        </div>
+                        <br>
+                        
+                        <p id="privacy">Ao enviar este formulário, eu concordo com a Flock
+                            Termos de uso e <a href="#">política de priviacidade.</a>
+                        </p>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="section">
+        <div class="palestrante">
+            <img src="images/palestrante.svg" alt="Palestrante Marina Mesquita">
+            <h2 class="subtitle"> A Palestrante</h2>
+            <p>
+                Doutora em psicologia, professora de pós e graduação 
+                em psicologia organizacional e RH na FGV
+            </p> 
+        </div>
+        <div class="social social2">
+            <a href="#" target="_blank"> <img class="social_image" src="images/fb.svg" alt="Facebook"> </a>
+            <a href="#" target="_blank"> <img class="social_image" src="images/tw.svg" alt="Twitter"> </a>
+            <a href="#" target="_blank"> <img class="social_image" src="images/ig.svg" alt="Instagram"> </a>
+            <a href="#" target="_blank"> <img class="social_image" src="images/Lkd.svg" alt="Linkedin"> </a>
+        </div>
+    </div>
+
+    <div class="webinar">
+        <div class="section sec_title">
+            <h2 class="subtitle t_web">Após o webinar você vai</h2>
+            <div class="after">
+                <div class="pot">
+                    <div class="circle">
+                        <img src="images/rocket.svg" alt="Potencializar seu time">
+                    </div>
+                    
+                    <h3 class="after_title">Potencializar seu time </h3>
+                    <p class="after_p">
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit,
+                        sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                    </p>
+                </div>
+
+                <div class="work">
+                    <div class="circle">
+                        <img src="images/handshake.svg" alt="Fazer seu trabalho fluir">
+                    </div>
+
+                    <h3 class="after_title"> Fazer seu trabalho fluir</h3>
+                    <p class="after_p">
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit,
+                        sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                    </p>
+                </div>
+
+                <div class="agile">
+                    <div class="circle">
+                        <img src="images/chat.svg" alt="Ter comunicação ágil com seus clientes">
+                    </div>
+
+                    <h3 class="after_title"> </h3>
+                    <p class="after_p">
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit,
+                        sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="content cont_slide">
+        <div class="slide-container">
+            <div class="slide">
+                <div class="slide_content">
+                    <div>
+                        <h2 class="subtitle sec_title"> Depoimento </h2>
+                        <p class="u_case">
+                            “Essa nova ferramenta deu muito mais agilidade ao time. Agora as negociações são mais rápidas, 
+                            e eu tenho mais tempo pra me dedicar as outras 
+                            atividades na empresa."
+                        </p>
+
+                        <h6 class="autor">Manu Dias</h6>
+                        <p class="autor_company">Usina Minas</p>
+                    </div>
+
+                    <img src = "images/depoimento.svg" alt="Manu Dias" >
+                </div>
+
+                <div class="slide_content">
+                    <div>
+                        <h2 class="subtitle sec_title"> Depoimento 2</h2>
+                        <p class="u_case">
+                            “Essa nova ferramenta deu muito mais agilidade ao time. Agora as negociações são mais rápidas, 
+                            e eu tenho mais tempo pra me dedicar as outras 
+                            atividades na empresa."
+                        </p>
+
+                        <h6 class="autor">Manu Dias</h6>
+                        <p class="autor_company">Usina Minas</p>
+                    </div>
+
+                    <img src = "images/depoimento.svg" alt="Manu Dias" >
+                </div>
+
+                <div class="slide_content">
+                    <div>
+                        <h2 class="subtitle sec_title"> Depoimento 3</h2>
+                        <p class="u_case">
+                            “Essa nova ferramenta deu muito mais agilidade ao time. Agora as negociações são mais rápidas, 
+                            e eu tenho mais tempo pra me dedicar as outras 
+                            atividades na empresa."
+                        </p>
+
+                        <h6 class="autor">Manu Dias</h6>
+                        <p class="autor_company">Usina Minas</p>
+                    </div>
+
+                    <img src = "images/depoimento.svg" alt="Manu Dias" >
                 </div>
             </div>
 
+            <button aria-label="Anterior" class="glider-prev">«</button>
+            <button aria-label="Próximo" class="glider-next">»</button>
+            <div role="tablist" class="dots"></div>
         </div>
+    </div>
 
+    <footer class="footer">
+        <div class="content f_cont">
+            <img src="images/Flock Logo Purple.svg" alt="Flock">
+
+            <p>
+                © 2021 Flock, Inc. All Rights Reserved.
+            </p>
+
+            <div class="social social2">
+                <a href="#" target="_blank"> <img class="social_image" src="images/fb_white.svg" alt="Facebook"> </a>
+                <a href="#" target="_blank"> <img class="social_image" src="images/tw_w.svg" alt="Twitter"> </a>
+                <a href="#" target="_blank"> <img class="social_image" src="images/ig_white.svg" alt="Instagram"> </a>
+                <a href="#" target="_blank"> <img class="social_image" src="images/LinkedIn_white.svg" alt="Linkedin"> </a>
+            </div>
+
+        </div>
+    </footer>
     
-    
-    
-    <!-- <div class="exemplo">Minimum TailwindCSS</div> -->
 </body>
 </html>
