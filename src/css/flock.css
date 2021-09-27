@@ -25,6 +25,9 @@ body::-webkit-scrollbar-thumb {
     body{
         zoom: 175%;
     }
+    .slide_content{
+        text-align: -webkit-left;
+    }
 }
 
 header{
@@ -332,11 +335,6 @@ h2.subtitle.t_web{
 
 .slide_content{
     @apply md:flex md:text-left md:flex-row md:space-x-2;
-}
-@media(max-width: 768px){
-    .slide_content{
-        text-align: -webkit-left;
-    }
 }
 
 h2.subtitle .sec_title_dep{
