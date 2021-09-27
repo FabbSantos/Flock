@@ -18,6 +18,8 @@
     "vite": "^2.5.10"
   },
   "dependencies": {
-    "@fortawesome/fontawesome-free": "^5.15.4"
+    "@fortawesome/fontawesome-free": "^5.15.4",
+    "dotenv": "^10.0.0",
+    "node-fetch": "^3.0.0"
   }
 }
