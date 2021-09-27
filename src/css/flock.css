@@ -305,7 +305,7 @@ label, p#question, .form #lgpd-label, p#privacy{
     @apply md:w-3/6;
 }
 .pal_flex_cont{
-    @apply md:max-w-xs text-left;    
+    @apply md:max-w-xs md:text-left;    
 }
 .sec_pal{
     @apply md:pb-14 md:pt-8;
@@ -328,10 +328,16 @@ h2.subtitle.t_web{
 .glider-slide img{
     @apply md:w-2/6;
 }
+
 .slide_content{
     @apply md:flex md:text-left md:flex-row md:space-x-2;
-    text-align: -webkit-left;
 }
+@media(max-width: 768px){
+    .slide_content{
+        text-align: -webkit-left;
+    }
+}
+
 h2.subtitle .sec_title_dep{
     @apply md:text-left md:pl-0;
 }
@@ -359,7 +365,7 @@ h2.subtitle .sec_title_dep{
 
 
 .f_cont{
-    @apply md:flex space-x-32;
+    @apply md:flex md:space-x-32;
 }
 .f_cont #logo {
     @apply md:w-1/5;
