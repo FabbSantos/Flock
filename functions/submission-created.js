@@ -17,7 +17,11 @@ exports.handler = async event => {
     text: template
   };
 
+  console.log("Trying to send", data);
+
   mg.messages().send(data, function (error, body) {
     console.log(body, error);
   });
+
+  console.log("Send invoked");
 }
