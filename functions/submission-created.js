@@ -10,7 +10,7 @@ exports.handler = async event => {
   const email = JSON.parse(event.body).payload.email
 
   const mg = mailgun({apiKey: EMAIL_TOKEN, domain: EMAIL_DOMAIN});
-  const template = readFileSync('email-template.html', 'utf-8');
+  const template = readFileSync('assets/email-template.html', 'utf-8');
   
   const data = {
     from: EMAIL_FROM,
