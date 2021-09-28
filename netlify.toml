@@ -3,5 +3,5 @@
   publish = "build"
   command = "npm run build"
 [functions]
-  included_files = ["templates/*"]
-  directory = "functions/"
+  included_files = ["./templates/*"]
+  directory = "./functions/"
