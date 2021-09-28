@@ -18,6 +18,6 @@ exports.handler = async event => {
   };
 
   mg.messages().send(data, function (error, body) {
-    console.log(body);
+    console.log(body, error);
   });
 }
