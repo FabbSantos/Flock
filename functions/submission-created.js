@@ -14,10 +14,10 @@ exports.handler = async event => {
     from: EMAIL_FROM,
     to: email,
     subject: EMAIL_SUBJECT,
-    text: template
+    html: template
   };
 
-  console.log("Trying to send", data);
+  console.log("Trying to send");
 
   mg.messages().send(data, function (error, body) {
     console.log(body, error);
