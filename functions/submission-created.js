@@ -19,8 +19,10 @@ exports.handler = async event => {
 
   console.log("Trying to send");
 
-  mg.messages().send(data, function (error, body) {
-    console.log(body, error);
+  mg.messages().send(data, err => {
+    if (err) return reject(err);
+
+    resolve();
   });
 
   console.log("Send invoked");
