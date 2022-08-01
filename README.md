@@ -1,4 +1,4 @@
 # flock
-Web/Mob challenge to create a landing page for desktop and mobile. 
+Challenge to create a landing page for desktop and mobile. 
 
 Deployed on Netlify.
